@@ -10,6 +10,15 @@ public class TesteCarro {
         van.consComb = 0.2;
 
         van.status();
+
+        Carro sonic = new Carro();
+        sonic.marca = "Chevrolet";
+        sonic.modelo = "Sonic";
+        sonic.numPassageiros = 5;
+        sonic.capComb = 200;
+        sonic.consComb = 3.2;
+
+        sonic.status();
     }
 
 }
