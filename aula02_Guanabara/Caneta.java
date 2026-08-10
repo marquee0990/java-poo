@@ -1,3 +1,4 @@
+package aula02_Guanabara;
 public class Caneta {
     String modelo;
     String cor;
