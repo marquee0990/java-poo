@@ -1,12 +1,12 @@
 package aula03_Guanabara;
 public class Caneta {
-    String modelo;
-    String cor;
-    float ponta;
-    int carga;
-    boolean tampada;
+    public String modelo;
+    public String cor;
+    private float ponta;
+    protected int carga;
+    protected boolean tampada;
 
-    void status(){
+    public void status(){
         System.out.println("ESPECIFICAÇÕES DA CANETA");
         System.out.println("O modelo da caneta é " + this.modelo);
         System.out.println("Uma caneta de cor " + this.cor);
@@ -15,7 +15,7 @@ public class Caneta {
         System.out.println("Está tampada? " + this.tampada);
     }
 
-    void rabiscar(){
+    public void rabiscar(){
         if(this.tampada == true){
             System.out.println("ERRO! Não pode rabiscar!");
         }else{
@@ -23,11 +23,11 @@ public class Caneta {
         }
     }
 
-    void tampar(){
+    protected void tampar(){
         this.tampada = true;
     }
     
-    void destampar(){
+    protected void destampar(){
         this.tampada = false;
     }
 }
