@@ -1,4 +1,4 @@
-package aula01_Groner_Exe.Livro;
+package aula01_Groner.aula01_Groner_Exe.Livro;
 
 public class LivroDeLivraria{
     public static void main(String[]args){

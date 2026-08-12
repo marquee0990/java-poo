@@ -1,4 +1,4 @@
-package aula01_Groner_Exe.Lampada;
+package aula01_Groner.aula01_Groner_Exe.Lampada;
 
 public class TesteLampada {
 
