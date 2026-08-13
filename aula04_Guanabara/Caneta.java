@@ -1,6 +1,6 @@
 package aula04_Guanabara;
 public class Caneta {
-    public String modelo;
+    private String modelo;
     private float ponta;
 
     public String getModelo(){
@@ -17,6 +17,12 @@ public class Caneta {
 
     public void setPonta(float p){
         this.ponta = p;
+    }
+
+    public void status(){
+        System.out.println("SPECS DA CANETA");
+        System.out.println("Modelo: "+ this.getModelo());
+        System.out.println("Ponta: " + this.getPonta());
     }
 
     
