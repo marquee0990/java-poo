@@ -42,8 +42,8 @@ public class ControleRemoto implements Controlador{
         System.out.println("Está ligado? " + this.getLigado());
         System.out.println("Está tocando? "+ this.getTocando());
         System.out.println("Volume "+this.getVolume());
-        for(int i = 0; i <= this.getVolume(); i+=10){
-            System.out.println("[]");
+        for(int i = 0; i < this.getVolume(); i+=10){
+            System.out.print("[]");
         }
     }
     public void fecharMenu(){
@@ -51,13 +51,17 @@ public class ControleRemoto implements Controlador{
     }
     public void maisVolume(){
         if (this.getLigado()) {
-            this.setVolume(this.getVolume() + 1);
-        }   
+            this.setVolume(this.getVolume() + 5);
+        }else{
+            System.out.println("Impossível aumentar volume");
+        }
     }
     public void menosVolume(){
         if (this.getLigado()) {
-            this.setVolume(this.getVolume() - 1);
-        }  
+            this.setVolume(this.getVolume() - 5);
+        }else{
+            System.out.println("Impossível diminuir volume");
+        }
     }
     public void ligarMudo(){
         if(this.getLigado() && this.getVolume() > 0){
