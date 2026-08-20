@@ -3,7 +3,7 @@ package aula06_Guanabara;
 public interface Controlador {
     public abstract void ligar();
     public abstract void desligar();
-    public abstract void abriMenu();
+    public abstract void abrirMenu();
     public abstract void fecharMenu();
     public abstract void maisVolume();
     public abstract void menosVolume();
