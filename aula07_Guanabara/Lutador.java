@@ -1,8 +1,7 @@
-package aula07a_Guanabara;
+package aula07_Guanabara;
 
 public class Lutador{
-    private String nome;
-    private String nacionalidade;
+    private String nome, nacionalidade;
     private int idade;
     private double altura, peso;
     private String categoria;
@@ -50,7 +49,7 @@ public class Lutador{
     public double getPeso(){
         return this.peso;
     }
-    public void setPeso(String peso){
+    public void setPeso(double peso){
         this.peso = peso;
         this.setCategoria();
     }
@@ -58,7 +57,7 @@ public class Lutador{
     public String getCategoria(){
         return this.categoria;
     }
-    public void setCategoria(){
+    private void setCategoria(){
         if(this.peso < 52.2){
             this.categoria = "Inválido";
         }else if(this.peso <= 70.3){
