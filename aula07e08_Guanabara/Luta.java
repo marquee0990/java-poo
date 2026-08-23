@@ -23,7 +23,9 @@ public class Luta {
         if(this.getAprovada()){
             this.desafiado.apresentar();
             this.desafiante.apresentar();
-            Random vencedor;
+            Random al = new Random();
+
+            int vencedor = al.nextInt(3);
             switch(vencedor){
                 case 0:
                     System.out.println("Empate");
