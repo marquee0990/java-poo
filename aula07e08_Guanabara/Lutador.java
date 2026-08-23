@@ -1,4 +1,4 @@
-package aula07_Guanabara;
+package aula07e08_Guanabara;
 
 public class Lutador{
     private String nome, nacionalidade;
