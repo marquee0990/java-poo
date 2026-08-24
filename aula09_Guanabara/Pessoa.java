@@ -5,6 +5,12 @@ public class Pessoa{
     private int idade;
     private String sexo;
 
+    public Pessoa(String no, int id, String se){
+        this.nome = no;
+        this.idade = id;
+        this.sexo = se;
+    }
+
     public void fazerNiver(){
         this.idade++;
     }

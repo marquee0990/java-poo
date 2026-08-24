@@ -14,13 +14,15 @@ public class Livro implements Publicacao{
         System.out.println("Total de páginas: " + this.totPaginas);
         System.out.println("Página atual: " + this.pagAtual);
         System.out.println("Tá aberto? " + this.aberto);
-        System.out.println("Leitor: " + this.leitor);
+        System.out.println("Leitor: " + this.leitor.getNome());
     }
 
     public Livro(String ti, String au, int tp, Pessoa le){
         this.titulo = ti;
         this.autor = au;
         this.totPaginas = tp;
+        this.aberto = false;
+        this.pagAtual = 0;
         this.leitor = le;
     }
 
@@ -62,23 +64,28 @@ public class Livro implements Publicacao{
         this.leitor = leitor;
     }
 
+    @Override
     public void abrir(){
-        
+        this.aberto = true;
     }
 
+    @Override
     public void fechar(){
-
+        this.aberto = false;
     }
 
-    public void folhear(){
-
+    @Override
+    public void folhear(int p){
+        this.pagAtual = p;
     }
 
+    @Override
     public void avancarPag(){
-
+        this.pagAtual++;
     }
 
+    @Override
     public void voltarPag(){
-        
+        this.pagAtual--;
     }
 }
