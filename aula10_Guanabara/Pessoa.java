@@ -31,6 +31,6 @@ public class Pessoa{
     }
 
     public String toString(){
-        return "Nome: "+ nome + "Idade: "+ idade + "Sexo: " + sexo;
+        return "Nome: "+ nome + " Idade: "+ idade + " Sexo: " + sexo;
     }
 }
