@@ -1,6 +1,6 @@
 package aula11_Guanabara;
 
-public class Aluno extends Pessoa {
+public final class Aluno extends Pessoa {
     private int matr;
     private String curso;
 
