@@ -4,7 +4,9 @@ public class Professor extends Pessoa{
     private String espec;
     private double salario;
 
-    public void receberAum(){}
+    public void receberAum(){
+        this.salario = salario + (salario * 0.1);
+    }
 
     public void setEspec(String espec){
         this.espec = espec;

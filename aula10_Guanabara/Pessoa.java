@@ -5,7 +5,9 @@ public class Pessoa{
     private int idade;
     private String sexo;
 
-    public void fazerNiv(){}
+    public void fazerNiv(){
+        this.idade++;
+    }
 
     public void setNome(String nome){
         this.nome = nome;
