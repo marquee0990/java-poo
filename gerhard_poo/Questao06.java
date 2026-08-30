@@ -1,9 +1,9 @@
 package gerhard_poo;
 import java.util.Scanner;
 
-public class Main {
+public class Questao06 {
     public static void main(String[] args){
-        Main o1 = new Main();
+        Questao06 o1 = new Questao06();
         Scanner sc = new Scanner(System.in);
 
         int num1;
