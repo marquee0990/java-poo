@@ -1,9 +1,9 @@
 package gerhard_poo;
 import java.util.Scanner;
 
-public class Questao10 {
+public class Questao1001 {
     public static void main(String[] args) {
-        Questao10 exibir = new Questao10();
+        Questao1001 exibir = new Questao1001();
         Scanner sc = new Scanner(System.in);
 
         System.out.println("DESCOBRINDO O DOBRO DOS NÚMEROS [Aperte ENTER para prosseguir]");
