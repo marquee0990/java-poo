@@ -3,15 +3,18 @@ package gerhard_poo;
 public class Sapato {
     private String marca;
     private int tamanho;
+    private double preco;
 
     public Sapato(){
         this.marca = "";
         this.tamanho = 0;
+        this.preco = 0.0;
     }
 
-    public Sapato(String ma, int tam){
+    public Sapato(String ma, int tam, double pre){
         this.marca = ma;
         this.tamanho = tam;
+        this.preco = pre;
     }
 
     public String getMarca(){
@@ -28,11 +31,17 @@ public class Sapato {
         this.tamanho = tamanho;
     }
 
+    public double getPreco(){
+        return this.preco;
+    }
+    public void setPreco(double preco){
+        this.preco = preco;
+    }
+
     public double calcularPrecoComDesconto(double porcentagemDesconto){
 
         if(verificarDisponibilidade() == true){
-            double valorSapato = 0;
-            return valorSapato - (valorSapato * porcentagemDesconto / 100);
+            return preco - (preco * porcentagemDesconto / 100);
         }else{
             System.out.println("Sapato indisponível");
             return 0;
