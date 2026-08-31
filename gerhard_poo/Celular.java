@@ -77,7 +77,7 @@ public class Celular {
     }
 
     public void aumentarVolume(){
-        if(volume == 100){
+        if(volume >= 100){
             System.out.println("Não é possível aumentar o volume.");
         }else{
             System.out.println("Aumentando volume");
@@ -86,7 +86,7 @@ public class Celular {
     }
 
     public void diminuirVolume(){
-        if(volume == 0){
+        if(volume <= 0){
             System.out.println("Não é possível diminuir o volume.");
         }else{
             System.out.println("Diminuindo volume");
