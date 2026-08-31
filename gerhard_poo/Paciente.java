@@ -1,7 +1,6 @@
 package gerhard_poo;
 
 public class Paciente {
-    //AJEITAR O SAPATO COLOCANDO O PREÇO E VERIFICAR SE PODE CRIAR MAIS DE 3 ATRIBUTOS
 
     private String nome;
     private int idade;

@@ -16,6 +16,7 @@ public class Celular {
         this.ligado = false;
         this.volume = 50;
     }
+    
     public Celular(String ma, String mo, Double pre, String cor, boolean li, int vo){
         this.marca = ma;
         this.modelo = mo;

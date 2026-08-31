@@ -40,8 +40,8 @@ public class Sapato {
 
     public double calcularPrecoComDesconto(double porcentagemDesconto){
 
-        if(verificarDisponibilidade() == true){
-            return preco - (preco * porcentagemDesconto / 100);
+        if(verificarDisponibilidade()){
+            return this.preco = this.preco - (this.preco * porcentagemDesconto / 100);
         }else{
             System.out.println("Sapato indisponível");
             return 0;
@@ -53,6 +53,6 @@ public class Sapato {
     }
 
     public String toString(){
-        return "A marca do sapato: " + marca + ", tamanho: " + tamanho;
+        return "A marca do sapato: " + marca + ", tamanho: " + tamanho + ", preço: " + preco;
     }
 }
