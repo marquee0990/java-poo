@@ -83,13 +83,11 @@ public class Principal {
         Thread.sleep(2000);
 
 
-        //ATENÇÃO!!!!!!!
+        
         System.out.println("MUDANDO APENAS O NOME DA MARCA NO C2");
         Thread.sleep(2000);
         c2.setMarca("Nokia");
         System.out.println(c2.getMarca());
-        Thread.sleep(2000);
-        System.out.println(c2.toString());
         Thread.sleep(2000);
 
         System.out.println("LIGANDO O CELULAR COM O CONSTRUTOR PADRÃO");
@@ -118,6 +116,8 @@ public class Principal {
         c1.setVolume(0);
         c1.diminuirVolume();
         Thread.sleep(2000);
+
+        
 
         System.out.println("TESTANDO MÉTODOS DO PACIENTE");
         Thread.sleep(2000);

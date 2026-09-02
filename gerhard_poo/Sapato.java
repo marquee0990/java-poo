@@ -41,10 +41,10 @@ public class Sapato {
     public double calcularPrecoComDesconto(double porcentagemDesconto){
 
         if(verificarDisponibilidade()){
-            return this.preco = this.preco - (this.preco * porcentagemDesconto / 100);
+            return this.preco - (this.preco * porcentagemDesconto / 100);
         }else{
             System.out.println("Sapato indisponível");
-            return 0;
+            return this.preco;
         }
     }
 
