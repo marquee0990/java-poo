@@ -1,6 +1,6 @@
 package aula14_Guanabara;
 
-public class Video {
+public abstract class Video implements AcoesVideo{
     private String titulo;
     private double avaliacao;
     private double views;
