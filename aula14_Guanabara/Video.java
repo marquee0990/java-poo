@@ -51,14 +51,14 @@ public class Video implements AcoesVideo{
     }
 
     public void play(){
-
+        this.reproduzindo = true;
     }
 
     public void pause(){
-
+        this.reproduzindo = false;
     }
 
     public void like(){
-
+        this.curtidas ++;
     }
 }
