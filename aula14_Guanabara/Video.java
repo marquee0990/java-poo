@@ -1,11 +1,19 @@
 package aula14_Guanabara;
 
-public abstract class Video implements AcoesVideo{
+public class Video implements AcoesVideo{
     private String titulo;
     private double avaliacao;
     private double views;
     private int curtidas;
     private boolean reproduzindo;
+
+    public Video(String titulo){
+        this.titulo = titulo;
+        this.avaliacao = 1;
+        this.views = 0;
+        this.curtidas = 0;
+        this.reproduzindo = false;
+    }
 
     public void setTitulo(String titulo){
         this.titulo = titulo;
@@ -40,5 +48,17 @@ public abstract class Video implements AcoesVideo{
     }
     public boolean getReproduzindo(){
         return this.reproduzindo;
+    }
+
+    public void play(){
+
+    }
+
+    public void pause(){
+
+    }
+
+    public void like(){
+
     }
 }
